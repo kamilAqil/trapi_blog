@@ -1,2 +1,3 @@
-# trapi_blog
-blog for practical media site managed by strapi cms
+# Strapi application
+
+A quick description of your strapi application
