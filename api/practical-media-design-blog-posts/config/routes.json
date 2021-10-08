@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/practical-media-design-blog-posts",
+      "handler": "practical-media-design-blog-posts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-media-design-blog-posts/count",
+      "handler": "practical-media-design-blog-posts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practical-media-design-blog-posts/:id",
+      "handler": "practical-media-design-blog-posts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/practical-media-design-blog-posts",
+      "handler": "practical-media-design-blog-posts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/practical-media-design-blog-posts/:id",
+      "handler": "practical-media-design-blog-posts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/practical-media-design-blog-posts/:id",
+      "handler": "practical-media-design-blog-posts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kamilaqilblogs",
+      "handler": "kamilaqilblog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kamilaqilblogs/count",
+      "handler": "kamilaqilblog.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kamilaqilblogs/:id",
+      "handler": "kamilaqilblog.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kamilaqilblogs",
+      "handler": "kamilaqilblog.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kamilaqilblogs/:id",
+      "handler": "kamilaqilblog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kamilaqilblogs/:id",
+      "handler": "kamilaqilblog.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

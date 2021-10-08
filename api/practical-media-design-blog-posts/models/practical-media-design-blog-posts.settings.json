@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "practical_media_design_blog_posts",
+  "info": {
+    "name": "Practical Media Design Blog Posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "article": {
+      "type": "richtext"
+    },
+    "postData": {
+      "type": "json"
+    },
+    "postMedia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
