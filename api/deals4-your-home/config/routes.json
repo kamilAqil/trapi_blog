@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/deals-4-your-homes",
+      "handler": "deals4-your-home.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deals-4-your-homes/count",
+      "handler": "deals4-your-home.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deals-4-your-homes/:id",
+      "handler": "deals4-your-home.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deals-4-your-homes",
+      "handler": "deals4-your-home.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/deals-4-your-homes/:id",
+      "handler": "deals4-your-home.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/deals-4-your-homes/:id",
+      "handler": "deals4-your-home.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
