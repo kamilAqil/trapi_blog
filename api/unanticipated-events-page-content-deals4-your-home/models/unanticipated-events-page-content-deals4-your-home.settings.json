@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "unanticipated_events_page_content_deals4_your_homes",
+  "info": {
+    "name": "Unanticipated Events Page Content Deals4YourHome"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

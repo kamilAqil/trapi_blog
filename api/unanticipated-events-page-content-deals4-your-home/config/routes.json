@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/unanticipated-events-page-content-deals-4-your-home",
+      "handler": "unanticipated-events-page-content-deals4-your-home.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/unanticipated-events-page-content-deals-4-your-home",
+      "handler": "unanticipated-events-page-content-deals4-your-home.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/unanticipated-events-page-content-deals-4-your-home",
+      "handler": "unanticipated-events-page-content-deals4-your-home.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
