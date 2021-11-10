@@ -42,11 +42,29 @@ jobs:
 
       # Fetch latest version of main 
       - name: Fetch Updates From Github and pull changes into main
-        run: |
-          git fetch, 
-          git pull origin main
+        uses: actions/checkout@v2
+
+      # Use yarn to install files
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      # install dependencies
+      - name: Install Dependencies
+        run: yarn install 
 
       # Restart the existing app named api
       - name : Restart Current App  
         run: | 
           pm2 restart api
+
+      # run build
+      - name: run build
+        run: |
+        yarn run build
+      
+      # pm2 restart app
+      - name : restart app
+      run: | 
+      pm2 restart api
