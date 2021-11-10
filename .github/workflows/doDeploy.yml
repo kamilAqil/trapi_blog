@@ -65,6 +65,6 @@ jobs:
         yarn run build
       
       # pm2 restart app
-      - name : restart app
+      - name: restart app
       run: | 
       pm2 restart api
