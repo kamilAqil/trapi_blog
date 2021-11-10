@@ -66,5 +66,5 @@ jobs:
       
       # pm2 restart app
       - name: restart app
-      run: | 
-      pm2 restart api
+        run: | 
+        pm2 restart api
