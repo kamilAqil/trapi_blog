@@ -39,10 +39,6 @@ jobs:
       - name: stop current app
         run: pm2 del api
 
-      # checkout changes
-        uses: actions/checkout@v2
-        with:
-        - run: git checkout HEAD^
     
       - name: setup node
         uses: actions/setup-node@v1
