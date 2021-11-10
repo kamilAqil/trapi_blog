@@ -34,3 +34,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      # Stop the existing app named api
+      - name : Stop Current App  
+        run: | 
+          pm2 stop api
+
+      # Fetch latest version of main 
+      - name: Fetch Updates From Github and pull changes into main
+        run: |
+          git fetch, 
+          git pull origin main
+
+      # Restart the existing app named api
+      - name : Restart Current App  
+        run: | 
+          pm2 restart api
