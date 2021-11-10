@@ -40,7 +40,6 @@ jobs:
         run: pm2 del api
 
       # checkout changes
-      - name: checkout main branch
         uses: actions/checkout@v2
         with:
           fetch-depth: 2
@@ -56,6 +55,9 @@ jobs:
 
       - name: buld app
         run: yarn run build
+
+      - name: install pg
+        run: yarn add pg
       
       - name: restart app
         run: pm2 start yarn --interpreter bash --name api -- start
