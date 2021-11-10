@@ -42,7 +42,6 @@ jobs:
       # checkout changes
         uses: actions/checkout@v2
         with:
-          fetch-depth: 2
         - run: git checkout HEAD^
     
       - name: setup node
