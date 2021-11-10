@@ -34,33 +34,26 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      
-      # Stop the existing app named api
-      - name : Stop Current App  
-        run: | 
-          pm2 stop api
+    
+      # stop current app
+      - name: stop current app
+        run: pm2 stop api
 
-      # Fetch latest version of main 
-      - name: Fetch Updates From Github and pull changes into main
+      # checkout changes
+      - name: checkout main branch
         uses: actions/checkout@v2
-
-      # Use yarn to install files
-      - name: Setup Node.js
+    
+      - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-
-      # install dependencies
-      - name: Install Dependencies
-        run: yarn install 
-
-      # Restart the existing app named api
-      - name : Restart Current App  
-        run: | 
-          pm2 restart api
-
-      # run build
-      - name: run build
-        run: |
-        yarn run build
       
+      - name: install dependencies
+        run : yarn install
+
+      - name: buld app
+        run: yarn run build
+      
+      - name: restart app
+        run: pm2 restart api
+
