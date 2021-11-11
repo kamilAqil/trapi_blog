@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       
-       - name: setup node
+      - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
