@@ -57,7 +57,7 @@ jobs:
       - name: restart app
         run: pm2 start npm --name api -- run start
 
-      - name: syncronize process list
+      - name: syncronize process list 
         run: pm2 save
 
 
