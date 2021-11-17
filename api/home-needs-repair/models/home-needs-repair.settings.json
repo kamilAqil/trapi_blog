@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "deals4_your_homes",
+  "kind": "singleType",
+  "collectionName": "home_needs_repairs",
   "info": {
-    "name": "Deals4YourHome",
-    "description": ""
+    "name": "home needs repair"
   },
   "options": {
     "increments": true,
@@ -12,8 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "test": {
-      "type": "string"
+    "WhyUsContent": {
+      "type": "richtext"
     }
   }
 }

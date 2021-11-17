@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "deals4_your_homes",
+  "kind": "singleType",
+  "collectionName": "structural_issues",
   "info": {
-    "name": "Deals4YourHome",
-    "description": ""
+    "name": "structural issues"
   },
   "options": {
     "increments": true,
@@ -12,8 +11,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "test": {
-      "type": "string"
+    "WhyUsContent": {
+      "type": "richtext"
     }
   }
 }

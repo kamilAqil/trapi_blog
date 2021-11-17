@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "unanticipated_events_page_content_deals4_your_homes",
+  "collectionName": "financial_troubles",
   "info": {
-    "name": "Unanticipated Events Page Content Deals4YourHome",
-    "description": ""
+    "name": " financial trouble"
   },
   "options": {
     "increments": true,
@@ -13,6 +12,9 @@
   "pluginOptions": {},
   "attributes": {
     "WhyUsContent": {
+      "type": "richtext"
+    },
+    "whyUsContent": {
       "type": "richtext"
     }
   }

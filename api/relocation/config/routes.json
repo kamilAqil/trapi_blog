@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/relocation",
+      "handler": "relocation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/relocation",
+      "handler": "relocation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/relocation",
+      "handler": "relocation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

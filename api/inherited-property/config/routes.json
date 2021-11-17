@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inherited-property",
+      "handler": "inherited-property.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inherited-property",
+      "handler": "inherited-property.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inherited-property",
+      "handler": "inherited-property.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

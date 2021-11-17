@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/structural-issues",
+      "handler": "structural-issues.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/structural-issues",
+      "handler": "structural-issues.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/structural-issues",
+      "handler": "structural-issues.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

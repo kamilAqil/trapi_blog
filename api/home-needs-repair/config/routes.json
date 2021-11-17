@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/home-needs-repair",
+      "handler": "home-needs-repair.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/home-needs-repair",
+      "handler": "home-needs-repair.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/home-needs-repair",
+      "handler": "home-needs-repair.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
