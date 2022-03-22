@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oc-home-cleanings",
+      "handler": "oc-home-cleaning.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oc-home-cleanings/count",
+      "handler": "oc-home-cleaning.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oc-home-cleanings/:id",
+      "handler": "oc-home-cleaning.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oc-home-cleanings",
+      "handler": "oc-home-cleaning.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oc-home-cleanings/:id",
+      "handler": "oc-home-cleaning.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oc-home-cleanings/:id",
+      "handler": "oc-home-cleaning.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

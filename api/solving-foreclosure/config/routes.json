@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/solving-foreclosures",
+      "handler": "solving-foreclosure.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solving-foreclosures/count",
+      "handler": "solving-foreclosure.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/solving-foreclosures/:id",
+      "handler": "solving-foreclosure.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/solving-foreclosures",
+      "handler": "solving-foreclosure.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/solving-foreclosures/:id",
+      "handler": "solving-foreclosure.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/solving-foreclosures/:id",
+      "handler": "solving-foreclosure.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

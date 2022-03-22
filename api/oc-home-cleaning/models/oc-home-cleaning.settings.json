@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oc_home_cleanings",
+  "info": {
+    "name": "ocHomeCleaning"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogContent": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "hashTagArray": {
+      "type": "json"
+    }
+  }
+}

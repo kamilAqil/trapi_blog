@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "potato_papas",
+  "info": {
+    "name": "Potato Papa"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogPosts": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "blogMedia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "arrayOfHashTag": {
+      "type": "json"
+    }
+  }
+}

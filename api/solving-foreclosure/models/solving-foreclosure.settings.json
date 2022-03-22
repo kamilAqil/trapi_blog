@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "solving_foreclosures",
+  "info": {
+    "name": "solvingForeclosure"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blogContent": {
+      "type": "richtext"
+    },
+    "hashtagArray": {
+      "type": "json"
+    }
+  }
+}

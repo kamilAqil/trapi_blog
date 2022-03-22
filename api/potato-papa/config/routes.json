@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/potato-papas",
+      "handler": "potato-papa.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/potato-papas/count",
+      "handler": "potato-papa.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/potato-papas/:id",
+      "handler": "potato-papa.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/potato-papas",
+      "handler": "potato-papa.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/potato-papas/:id",
+      "handler": "potato-papa.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/potato-papas/:id",
+      "handler": "potato-papa.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
