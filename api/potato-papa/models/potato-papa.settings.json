@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "potato_papas",
   "info": {
-    "name": "Potato Papa"
+    "name": "Potato Papa",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -31,6 +32,15 @@
     },
     "arrayOfHashTag": {
       "type": "json"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Baked_Stuff",
+        "Food_Stuff",
+        "Mashed",
+        "Web_Development"
+      ]
     }
   }
 }
